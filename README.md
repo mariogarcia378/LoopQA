@@ -1,2 +1,0 @@
-# LoopQA
-LoopQA Technical Evaluation

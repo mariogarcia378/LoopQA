@@ -1,0 +1,30 @@
+{
+  "name": "loopqa",
+  "version": "1.0.0",
+  "description": "LoopQA Technical Evaluation",
+  "main": "index.js",
+  "scripts": {
+    "pretest": "tsc --noEmit && eslint tests/**",
+    "presanity:test": "tsc --noEmit && eslint tests/**",
+    "test": "playwright test",
+    "sanity:test": "playwright test --grep '@sanity'"
+  },
+  "keywords": [],
+  "author": "Mario Garcia",
+  "license": "ISC",
+  "devDependencies": {
+    "@eslint/js": "^9.16.0",
+    "@playwright/test": "^1.49.1",
+    "@types/eslint__js": "^8.42.3",
+    "@types/node": "^22.10.1",
+    "@typescript-eslint/eslint-plugin": "^8.18.0",
+    "@typescript-eslint/parser": "^8.18.0",
+    "dotenv": "^16.4.7",
+    "eslint": "^9.16.0",
+    "eslint-plugin-playwright": "^2.1.0",
+    "globals": "^15.13.0",
+    "playwright": "^1.49.1",
+    "typescript": "^5.7.2",
+    "typescript-eslint": "^8.18.0"
+  }
+}
