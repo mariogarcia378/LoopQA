@@ -1,4 +1,3 @@
-// tests/login.spec.ts
 import {test, expect} from '@playwright/test';
 import {LoginPage} from '../pages/login.page';
 import {BoardPage} from '../pages/board.page';
