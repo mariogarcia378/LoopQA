@@ -3,17 +3,6 @@ import {LoginPage} from '../pages/login.page';
 import {BoardPage} from '../pages/board.page';
 import * as fs from 'fs';
 
-interface TestCase {
-  testCase: string;
-  url: string;
-  email: string;
-  password: string;
-  page: string;
-  task: string;
-  column: string;
-  tags: string[];
-}
-
 const testData = JSON.parse(
   fs.readFileSync('data-driven/testData.json', 'utf-8')
 );
