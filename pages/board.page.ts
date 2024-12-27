@@ -21,12 +21,9 @@ export class BoardPage {
   async verifyTaskInColumn(taskName: string, columnName: string) {
     const columnLocator = this.page
       .locator(`h2:has-text("${columnName}")`)
-      .first()
       .locator('..');
     await expect(columnLocator).toBeVisible();
-    const taskLocator = columnLocator
-      .locator(`div:has-text("${taskName}")`)
-      .first();
+    const taskLocator = columnLocator.locator(`h3:has-text("${taskName}")`);
     await expect(taskLocator).toBeVisible();
   }
 
